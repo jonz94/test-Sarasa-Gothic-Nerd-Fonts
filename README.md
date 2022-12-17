@@ -3,7 +3,7 @@
 <h1 align="center">Sarasa Gothic ⨯ Nerd Fonts</h1>
 
 <p align="center">
-  <a href="https://github.com/jonz94/Sarasa-Gothic-Nerd-Font/actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jonz94/Sarasa-Gothic-Nerd-Fonts/generate%20fonts?label=generate%20fonts&logo=github&style=flat-square"></a>
+  <a href="https://github.com/jonz94/Sarasa-Gothic-Nerd-Font/actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jonz94/Sarasa-Gothic-Nerd-Fonts/generate-fonts.yml?branch=v0.38.0-0&label=generate%20fonts&logo=github&style=flat-square"></a>
   <a href="https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/latest"><img alt="latest release" src="https://img.shields.io/github/v/release/jonz94/Sarasa-Gothic-Nerd-Fonts?style=flat-square"></a>
   <a href="https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
   <a href="https://github.com/psf/black"><img alt="python code style: black" src="https://img.shields.io/badge/python%20code%20style-black-000000.svg?style=flat-square"></a>
