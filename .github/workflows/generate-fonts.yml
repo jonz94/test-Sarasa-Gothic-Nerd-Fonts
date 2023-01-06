@@ -46,7 +46,7 @@ jobs:
           echo Try appimage with path
           fontforge --version
       - name: Get Font Patcher
-        uses: robinraju/release-downloader@v1.6
+        uses: robinraju/release-downloader@v1.7
         with:
           repository: 'ryanoasis/nerd-fonts'
           tag: ${{ env.NERD_FONTS_VERSION }}
@@ -64,7 +64,7 @@ jobs:
           echo "LATEST_VERSION=${LATEST_TAG:1}" >> $GITHUB_ENV
           echo LATEST_VERSION is ${{ env.LATEST_VERSION }}
       - name: Download latest version of Sarasa Gothic from GitHub release page
-        uses: robinraju/release-downloader@v1.6
+        uses: robinraju/release-downloader@v1.7
         with:
           repository: 'be5invis/Sarasa-Gothic'
           tag: ${{ env.LATEST_TAG }}
@@ -148,7 +148,7 @@ jobs:
           echo Try appimage with path
           fontforge --version
       - name: Get Font Patcher
-        uses: robinraju/release-downloader@v1.6
+        uses: robinraju/release-downloader@v1.7
         with:
           repository: 'ryanoasis/nerd-fonts'
           tag: ${{ env.NERD_FONTS_VERSION }}
@@ -166,7 +166,7 @@ jobs:
           echo "LATEST_VERSION=${LATEST_TAG:1}" >> $GITHUB_ENV
           echo LATEST_VERSION is ${{ env.LATEST_VERSION }}
       - name: Download latest version of Sarasa Gothic from GitHub release page
-        uses: robinraju/release-downloader@v1.6
+        uses: robinraju/release-downloader@v1.7
         with:
           repository: 'be5invis/Sarasa-Gothic'
           tag: ${{ env.LATEST_TAG }}
