@@ -9,7 +9,6 @@ on:
 
 jobs:
   check:
-    if: github.repository == 'jonz94/Sarasa-Gothic-Nerd-Fonts'
     runs-on: ubuntu-22.04
     outputs:
       should-update: ${{ steps.check.outputs.should-update }}
