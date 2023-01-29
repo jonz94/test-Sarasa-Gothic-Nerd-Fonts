@@ -67,7 +67,8 @@ brew install jonz94/sarasa-nerd-fonts/font-sarasa-nerd-font-ttc
 
 ### Manually install
 
-- Go to the [Releases page](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases) and download the zip file.
+- Go to the [Releases Page](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/latest) and download the zip file.
+- TTC format can be downloaded at [ttc-sarasa-gothic-nerd-fonts Releases Page](https://github.com/jonz94/ttc-sarasa-gothic-nerd-fonts/releases/latest).
 
 ## [List of TTF Font Family Name](docs/ttf-font-family-name.md)
 
@@ -75,8 +76,8 @@ brew install jonz94/sarasa-nerd-fonts/font-sarasa-nerd-font-ttc
 
 > What is WOFF? 👉 [The Web Open Font Format (WOFF) - Developer guides | MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/WOFF)
 
-- WOFF can be downloaded at [woff-sarasa-gothic-nerd-fonts release page](https://github.com/jonz94/woff-sarasa-gothic-nerd-fonts/releases/latest)
-- WOFF2 can be downloaded at [woff2-sarasa-gothic-nerd-fonts release page](https://github.com/jonz94/woff2-sarasa-gothic-nerd-fonts/releases/latest)
+- WOFF can be downloaded at [woff-sarasa-gothic-nerd-fonts Release Page](https://github.com/jonz94/woff-sarasa-gothic-nerd-fonts/releases/latest).
+- WOFF2 can be downloaded at [woff2-sarasa-gothic-nerd-fonts Release Page](https://github.com/jonz94/woff2-sarasa-gothic-nerd-fonts/releases/latest).
 
 ## Notable Changes
 
