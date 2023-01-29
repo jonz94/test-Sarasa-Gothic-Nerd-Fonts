@@ -69,4 +69,4 @@
   - `CL`: Classical orthography
   - `SC`, `TC`, `J`, `K`, `HC`: Regional orthography, following [Source Han Sans](https://github.com/adobe-fonts/source-han-sans) notations.
 
-Credits: https://github.com/be5invis/Sarasa-Gothic/tree/218385ca597cff4bc834f49684415cce91cb41a0#what-are-the-names
+Credits: https://github.com/be5invis/Sarasa-Gothic#what-are-the-names
