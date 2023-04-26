@@ -62,7 +62,7 @@ brew install jonz94/sarasa-nerd-fonts/font-sarasa-nerd-font-ttc
 
 ### Using Shell Script on Linux
 
-- [Here](https://gist.github.com/jonz94/bf5b885e656caa88b6adbf6df93612e2) is a POSIX compliant shell script that install the fonts on Linux.
+- [Here](https://gist.github.com/jonz94/bf5b885e656caa88b6adbf6df93612e2) is a POSIX compliant shell script that installs the fonts on Linux.
 - Feel free to customize it to suit your own needs!
 
 ### Manually install
