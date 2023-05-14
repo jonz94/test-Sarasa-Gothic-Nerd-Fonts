@@ -29,7 +29,7 @@ jobs:
           ]
     env:
       FILENAME: 'sarasa-${{ matrix.styles }}-${{ matrix.orthographies }}-${{ matrix.variants }}'
-      NERD_FONTS_VERSION: v2.3.3
+      NERD_FONTS_VERSION: v3.0.1
     steps:
       - uses: actions/checkout@v3
 
@@ -131,7 +131,7 @@ jobs:
           ]
     env:
       FILENAME: 'sarasa-${{ matrix.styles }}-${{ matrix.orthographies }}-${{ matrix.variants }}'
-      NERD_FONTS_VERSION: v2.3.3
+      NERD_FONTS_VERSION: v3.0.1
     steps:
       - uses: actions/checkout@v3
 
