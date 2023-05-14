@@ -79,11 +79,15 @@ jobs:
       - name: install configparser
         run: pip install configparser
       - run: ls -l
+      - run: mkdir -p "${PWD}/outputs"
       - name: patch font
-        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}"
+        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
+      - run: ls -l "${PWD}/outputs"
       - name: rename patched font files
-        run: mv *Complete.ttf "${FILENAME}-nerd-font.ttf"
+        run: |
+          cd "${PWD}/outputs"
+          mv *.ttf "../${FILENAME}-nerd-font.ttf"
       - run: ls -l
       - name: install fonttools
         run: pip install fonttools
@@ -181,11 +185,15 @@ jobs:
       - name: install configparser
         run: pip install configparser
       - run: ls -l
+      - run: mkdir -p "${PWD}/outputs"
       - name: patch font
-        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}"
+        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
+      - run: ls -l "${PWD}/outputs"
       - name: rename patched font files
-        run: mv *Complete.ttf "${FILENAME}-nerd-font.ttf"
+        run: |
+          cd "${PWD}/outputs"
+          mv *.ttf "../${FILENAME}-nerd-font.ttf"
       - run: ls -l
       - name: install fonttools
         run: pip install fonttools
