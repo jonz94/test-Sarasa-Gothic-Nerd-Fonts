@@ -115,6 +115,7 @@ jobs:
           path: sarasa-${{ matrix.styles }}-${{ matrix.orthographies }}-${{ matrix.variants }}-nerd-font.ttf
 
   patch2:
+    needs: patch1
     runs-on: ubuntu-22.04
     strategy:
       matrix:
@@ -221,7 +222,7 @@ jobs:
           path: sarasa-${{ matrix.styles }}-${{ matrix.orthographies }}-${{ matrix.variants }}-nerd-font.ttf
 
   zip:
-    needs: [patch1, patch2]
+    needs: patch2
     runs-on: ubuntu-22.04
     strategy:
       matrix:
