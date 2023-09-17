@@ -72,7 +72,7 @@ jobs:
       FILENAME: 'sarasa-${{ matrix.styles }}-${{ matrix.orthographies }}-${{ matrix.variants }}'
       NERD_FONTS_VERSION: v3.0.2
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # credits: https://github.com/adam7/delugia-code/blob/411f2aecdef35d6bb92776d26bb5efe4ee799e0a/.github/workflows/ci.yaml#L77-L100
       - name: Fetch FontForge
@@ -86,7 +86,7 @@ jobs:
           echo Try appimage with path
           fontforge --version
       - name: Get Font Patcher
-        uses: robinraju/release-downloader@v1.7
+        uses: robinraju/release-downloader@v1.8
         with:
           repository: 'ryanoasis/nerd-fonts'
           tag: ${{ env.NERD_FONTS_VERSION }}
@@ -168,7 +168,7 @@ jobs:
       FILENAME: 'sarasa-${{ matrix.styles }}-${{ matrix.orthographies }}-${{ matrix.variants }}'
       NERD_FONTS_VERSION: v3.0.2
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # credits: https://github.com/adam7/delugia-code/blob/411f2aecdef35d6bb92776d26bb5efe4ee799e0a/.github/workflows/ci.yaml#L77-L100
       - name: Fetch FontForge
@@ -182,7 +182,7 @@ jobs:
           echo Try appimage with path
           fontforge --version
       - name: Get Font Patcher
-        uses: robinraju/release-downloader@v1.7
+        uses: robinraju/release-downloader@v1.8
         with:
           repository: 'ryanoasis/nerd-fonts'
           tag: ${{ env.NERD_FONTS_VERSION }}
