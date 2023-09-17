@@ -78,8 +78,7 @@ jobs:
       - name: Fetch FontForge
         run: |
           sudo apt install software-properties-common python3-fontforge fuse -y -q
-          curl -L "https://github.com/fontforge/fontforge/releases/download/20220308/FontForge-2022-03-08-582bd41-x86_64.AppImage" \
-            --output fontforge
+          curl -L "https://github.com/fontforge/fontforge/releases/download/20230101/FontForge-2023-01-01-a1dad3e-x86_64.AppImage" --output fontforge
           chmod u+x fontforge
           echo Try appimage
           ./fontforge --version
@@ -175,8 +174,7 @@ jobs:
       - name: Fetch FontForge
         run: |
           sudo apt install software-properties-common python3-fontforge fuse -y -q
-          curl -L "https://github.com/fontforge/fontforge/releases/download/20220308/FontForge-2022-03-08-582bd41-x86_64.AppImage" \
-            --output fontforge
+          curl -L "https://github.com/fontforge/fontforge/releases/download/20230101/FontForge-2023-01-01-a1dad3e-x86_64.AppImage" --output fontforge
           chmod u+x fontforge
           echo Try appimage
           ./fontforge --version
