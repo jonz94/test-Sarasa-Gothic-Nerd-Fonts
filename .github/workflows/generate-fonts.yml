@@ -39,7 +39,7 @@ jobs:
         with:
           repository: 'be5invis/Sarasa-Gothic'
           tag: ${{ env.LATEST_TAG }}
-          fileName: 'sarasa-gothic-ttf-${{ env.LATEST_VERSION }}.7z'
+          fileName: 'Sarasa-TTF-${{ env.LATEST_VERSION }}.7z'
       - run: ls -l
 
       - name: Upload sarasa-gothic-ttf.7z
