@@ -135,7 +135,7 @@ jobs:
 
       - name: patch font
         env:
-          ORIGINAL_FILENAME: Sarasa${{ steps.get-original-parts.style }}${{ steps.get-original-parts.orthography }}-${{ steps.get-original-parts.variant }}
+          ORIGINAL_FILENAME: Sarasa${{ steps.get-original-parts.outputs.style }}${{ steps.get-original-parts.outputs.orthography }}-${{ steps.get-original-parts.outputs.variant }}
         run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${ORIGINAL_FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
       - run: ls -l "${PWD}/outputs"
@@ -256,7 +256,7 @@ jobs:
 
       - name: patch font
         env:
-          ORIGINAL_FILENAME: Sarasa${{ steps.get-original-parts.style }}${{ steps.get-original-parts.orthography }}-${{ steps.get-original-parts.variant }}
+          ORIGINAL_FILENAME: Sarasa${{ steps.get-original-parts.outputs.style }}${{ steps.get-original-parts.outputs.orthography }}-${{ steps.get-original-parts.outputs.variant }}
         run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${ORIGINAL_FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
       - run: ls -l "${PWD}/outputs"
