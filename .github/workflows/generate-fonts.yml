@@ -114,7 +114,7 @@ jobs:
       - name: Get original parts
         id: get-original-parts
         run: |
-          matrix_style=${${{ matrix.styles }}/-slab/Slab}
+          matrix_style=${{ matrix.styles }}
           matrix_style=${matrix_style/-slab/Slab}
           original_style=${matrix_style^}
           echo original_style is ${original_style}
@@ -235,7 +235,7 @@ jobs:
       - name: Get original parts
         id: get-original-parts
         run: |
-          matrix_style=${${{ matrix.styles }}/-slab/Slab}
+          matrix_style=${{ matrix.styles }}
           matrix_style=${matrix_style/-slab/Slab}
           original_style=${matrix_style^}
           echo original_style is ${original_style}
