@@ -111,19 +111,16 @@ jobs:
       - run: ls -l
       - run: mkdir -p "${PWD}/outputs"
 
-      - name: Get original parts
-        id: get-original-parts
+      - name: Rename target filename
         run: |
           matrix_style=${{ matrix.styles }}
           matrix_style=${matrix_style/-slab/Slab}
           original_style=${matrix_style^}
           echo original_style is ${original_style}
-          echo "style=${original_style}" >> $GITHUB_OUTPUT
 
           matrix_orthography=${{ matrix.orthographies }}
           original_orthography=${matrix_orthography^^}
           echo original_orthography is ${original_orthography}
-          echo "orthography=${original_orthography}" >> $GITHUB_OUTPUT
 
           matrix_variant=${{ matrix.variants }}
           matrix_variant=${matrix_variant/italic/Italic}
@@ -131,12 +128,14 @@ jobs:
           matrix_variant=${matrix_variant/light/Light}
           original_variant=${matrix_variant^}
           echo original_variant is ${original_variant}
-          echo "variant=${original_variant}" >> $GITHUB_OUTPUT
+
+          original_filename="Sarasa${original_style}${original_orthography}-${original_variant}"
+          echo original_filename is ${original_filename}
+
+          mv "${original_filename}.ttf" "${FILENAME}.ttf"
 
       - name: patch font
-        env:
-          ORIGINAL_FILENAME: Sarasa${{ steps.get-original-parts.outputs.style }}${{ steps.get-original-parts.outputs.orthography }}-${{ steps.get-original-parts.outputs.variant }}
-        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${ORIGINAL_FILENAME}.ttf" --outputdir "${PWD}/outputs"
+        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
       - run: ls -l "${PWD}/outputs"
       - name: rename patched font files
@@ -232,19 +231,16 @@ jobs:
       - run: ls -l
       - run: mkdir -p "${PWD}/outputs"
 
-      - name: Get original parts
-        id: get-original-parts
+      - name: Rename target filename
         run: |
           matrix_style=${{ matrix.styles }}
           matrix_style=${matrix_style/-slab/Slab}
           original_style=${matrix_style^}
           echo original_style is ${original_style}
-          echo "style=${original_style}" >> $GITHUB_OUTPUT
 
           matrix_orthography=${{ matrix.orthographies }}
           original_orthography=${matrix_orthography^^}
           echo original_orthography is ${original_orthography}
-          echo "orthography=${original_orthography}" >> $GITHUB_OUTPUT
 
           matrix_variant=${{ matrix.variants }}
           matrix_variant=${matrix_variant/italic/Italic}
@@ -252,12 +248,14 @@ jobs:
           matrix_variant=${matrix_variant/light/Light}
           original_variant=${matrix_variant^}
           echo original_variant is ${original_variant}
-          echo "variant=${original_variant}" >> $GITHUB_OUTPUT
+
+          original_filename="Sarasa${original_style}${original_orthography}-${original_variant}"
+          echo original_filename is ${original_filename}
+
+          mv "${original_filename}.ttf" "${FILENAME}.ttf"
 
       - name: patch font
-        env:
-          ORIGINAL_FILENAME: Sarasa${{ steps.get-original-parts.outputs.style }}${{ steps.get-original-parts.outputs.orthography }}-${{ steps.get-original-parts.outputs.variant }}
-        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${ORIGINAL_FILENAME}.ttf" --outputdir "${PWD}/outputs"
+        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
       - run: ls -l "${PWD}/outputs"
       - name: rename patched font files
