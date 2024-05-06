@@ -9,7 +9,7 @@ concurrency: generate-fonts
 
 jobs:
   get-infomation:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       tag: ${{ steps.get-latest-version.outputs.tag }}
       version: ${{ steps.get-latest-version.outputs.version }}
@@ -25,7 +25,7 @@ jobs:
           echo version is ${VERSION}
 
   prepare:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: get-infomation
     env:
       LATEST_TAG: ${{ needs.get-infomation.outputs.tag }}
@@ -35,7 +35,7 @@ jobs:
       - run: echo version is ${{ env.LATEST_VERSION }}
 
       - name: Download latest version of Sarasa Gothic from GitHub release page
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.10
         with:
           repository: 'be5invis/Sarasa-Gothic'
           tag: ${{ env.LATEST_TAG }}
@@ -86,7 +86,7 @@ jobs:
           echo Try appimage with path
           fontforge --version
       - name: Get Font Patcher
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.10
         with:
           repository: 'ryanoasis/nerd-fonts'
           tag: ${{ env.NERD_FONTS_VERSION }}
@@ -205,7 +205,7 @@ jobs:
           echo Try appimage with path
           fontforge --version
       - name: Get Font Patcher
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.10
         with:
           repository: 'ryanoasis/nerd-fonts'
           tag: ${{ env.NERD_FONTS_VERSION }}
