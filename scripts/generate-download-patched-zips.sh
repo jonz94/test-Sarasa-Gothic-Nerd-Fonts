@@ -6,9 +6,7 @@ touch $outputFile
 
 counter=0
 styles=("fixed" "fixed-slab" "mono" "mono-slab" "term" "term-slab" "gothic" "ui")
-
-#orthographies=("cl" "hc" "j" "k" "sc" "tc")
-orthographies=("cl" "hc" "k" "sc" "tc")
+orthographies=("cl" "hc" "j" "k" "sc" "tc")
 
 for style in ${styles[@]}; do
   for orthography in ${orthographies[@]}; do
