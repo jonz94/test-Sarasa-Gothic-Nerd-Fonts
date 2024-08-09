@@ -133,8 +133,8 @@ jobs:
           mv "${original_filename}.ttf" "${FILENAME}.ttf"
       - run: ls -l
       - run: mkdir -p "${PWD}/outputs"
-      - name: patch font
-        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
+      - name: patch font without Material Design Icons to avoid reaching the 65535 glyphs limit
+        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --codicons --fontawesome --fontawesomeext --fontlogos --octicons --powersymbols --pomicons --powerline --powerlineextra --weather --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
       - run: ls -l "${PWD}/outputs"
       - name: rename patched font files
@@ -252,8 +252,8 @@ jobs:
           mv "${original_filename}.ttf" "${FILENAME}.ttf"
       - run: ls -l
       - run: mkdir -p "${PWD}/outputs"
-      - name: patch font
-        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --complete --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
+      - name: patch font without Material Design Icons to avoid reaching the 65535 glyphs limit
+        run: fontforge -script "${PWD}/font-patcher" --adjust-line-height --careful --codicons --fontawesome --fontawesomeext --fontlogos --octicons --powersymbols --pomicons --powerline --powerlineextra --weather --no-progressbars --quiet --removeligatures "${PWD}/${FILENAME}.ttf" --outputdir "${PWD}/outputs"
       - run: ls -l
       - run: ls -l "${PWD}/outputs"
       - name: rename patched font files
