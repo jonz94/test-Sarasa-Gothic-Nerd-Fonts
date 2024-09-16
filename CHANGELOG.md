@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 ## [HEAD](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.5-0...HEAD)
 
+## [v1.0.20-0](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.19-0...v1.0.20-0) (2024-09-14)
+
+### ⚠ BREAKING CHANGES / ✅ Bug Fixes
+
+- Remove `material` glyphs to reduce the number of glyphs ([d670456](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/commit/d670456e5edc0ff9a86e732734026d087653942c))
+- Add back `codicons` glyphs that was removed in v1.0.11-0 ([41f1336](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/commit/41f1336ff8386ed37cc3b286bb0dcc9568ad2cf8))
+
+## [v1.0.11-0](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.10-0...v1.0.11-0) (2024-05-06)
+
+### ⚠ BREAKING CHANGES / ✅ Bug Fixes
+
+- Remove `codicons` glyphs to reduce the number of glyphs ([7400733](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/commit/740073395df9e386de653271c75f6ad0f3621fa1))
+- Add back "j" orthography that was removed in v1.0.10-0 ([8d8867c](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/commit/8d8867c37f8baa35f15be4e9d3426a115fdb28d0))
+- Downgrade nerd fonts back to v3.1.1 ([e09ca35](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/commit/e09ca35a91d7f870399ad28a82b9352bc5bcd07c))
+
+## [v1.0.10-0](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.9-0...v1.0.10-0) (2024-04-15)
+
+### ⚠ BREAKING CHANGES / ✅ Hot Fixes
+
+- Remove "j" orthography temporarily ([d398e8e](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/commit/d398e8ea0d850df90722137ba73f351165acac82))
+
+### ✨ Features
+
+- Upgrade nerd fonts to v3.2.1 ([#28](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/pull/28))
+
 ## [v1.0.5-0](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v0.42.6-0...v1.0.5-0) (2024-02-18)
 
 ### ✨ Features
