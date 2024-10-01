@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## [HEAD](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.5-0...HEAD)
+## [HEAD](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.21-1...HEAD)
+
+## [v1.0.21-1](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.21-0...v1.0.21-1) (2024-09-30)
+
+### ✨ Features
+
+- Upgrade nerd fonts to v3.2.1 ([2872bfa](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/commit/2872bfad2cb902c7c4613767447f3298cb58a553))
+
+### ✅ Bug Fixes
+
+- ✅ Do not patch `xAvgCharWidth` and `hdmx` for `gothic` and `ui` ([#32](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/pull/32)), closes [#31](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/issues/31)
 
 ## [v1.0.20-0](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/compare/v1.0.19-0...v1.0.20-0) (2024-09-14)
 
