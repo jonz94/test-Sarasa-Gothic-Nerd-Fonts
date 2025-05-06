@@ -9,7 +9,7 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     outputs:
       should-update: ${{ steps.check.outputs.should-update }}
       latest-tag-with-revision: ${{ steps.check.outputs.latest-tag-with-revision }}
@@ -47,7 +47,7 @@ jobs:
   tag:
     needs: check
     if: ${{ needs.check.outputs.should-update == 'true' }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
